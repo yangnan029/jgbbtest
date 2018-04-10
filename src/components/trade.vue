@@ -15,7 +15,9 @@
                             <span>赎回</span>
                         </div>
                         <div class="right">
-                            <input type="text"><span>-</span><input type="text"><button>搜索</button>
+                            <input type="text">
+                            <span>-</span><input type="text">
+                            <button @click="getTrade">搜索</button>
                         </div>
                     </div>
                     <div class="content">
@@ -31,12 +33,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                <tr  v-for="(item,index) in data1" :key="index">
+                                    <td>{{item.crtTime}}</td>
+                                    <td>{{item.productType}}</td>
+                                    <td>{{item.prodName}}</td>
+                                    <td>{{item.txnAmount}}</td>
+                                    <td>{{item.txnType}}</td>
                                     <td></td>
                                 </tr>
                             </tbody>
@@ -44,7 +46,8 @@
                     </div>
                 </div>
                 <div class="right_bottom">
-                    <a href="#" class="one">1</a><a href="#">共1页</a>
+                    <a href="#" class="one">1</a>
+                    <a href="#">共1页</a>
                 </div>
             </div>
         </div>
@@ -55,10 +58,13 @@
 import cHeader from "./header.vue";
 import cFooter from "./footer.vue";
 import cList from "./list.vue";
-
+import axios from "axios";
 export default {
   data() {
-    return {};
+    return {
+        data1:[],
+        data2:[]
+    };
   },
   components: {
     cHeader,
@@ -66,7 +72,22 @@ export default {
     cList
   },
   created() {},
-  methods: {}
+  methods: {
+      getTrade(){
+          const _self=this;
+          axios.get("/jgb-web/v1/tradelist",{params:{startDate: "2015-11-08",endDate: "2018-04-10",pageNo: "1",txnType:"" }}).then(function (res) {
+              _self.data1=res.data.data.resultList;
+              console.log(_self.data1);
+          })
+      },
+      getIncome(){
+          const _self=this;
+          axios.get("/jgb-web/v1/income",{params:{startDate: "2016-12-04",endDate: "2018-04-10",pageNo: "1",txnType:"" }}).then(function (res) {
+                _self.data2=res.data.data.resultList;
+                console.log(_self.data2);
+          })
+      }
+  }
 };
 </script>
 <style lang="scss" scoped>
