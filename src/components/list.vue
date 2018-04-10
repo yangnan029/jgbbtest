@@ -1,10 +1,10 @@
 <template>
   <div class="lists">
       <ul>
-          <li><a href="#">我的资产</a></li>
-          <li><a href="#">产品列表</a></li>
-          <li><a href="#">交易记录</a></li>
-          <li><a href="#">爱心值</a></li>
+          <li><router-link to="wealth">我的资产</router-link></li>
+          <li><router-link to="product">产品列表</router-link></li>
+          <li><router-link to="trade">交易记录</router-link></li>
+          <li><router-link to="loveValue">爱心值</router-link></li>
           <li>
               <dl>
                   <dt>系统管理</dt>

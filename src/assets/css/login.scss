@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    zoom: 1;
+    &:after{
+        display: block;
+        height: 0;
+        content:"";
+        clear: both;
+    }
+}
+.main{
+    width: 900px;
+    margin: 0 auto;
+    .title{
+        margin-top: 45px;
+        border-bottom: 1px solid #dadada;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        span{
+            font-size: 20px;
+            color: #1b65ce;
+            border-bottom: 2px solid #1b65ce;
+            letter-spacing: 3px;
+            padding: 5px 10px;
+        }
+    }
+    .content{
+        .left{
+            width: 369px;
+            padding: 70px 140px 150px 30px;
+            float: left;
+            border-right: 1px solid #dadada;
+            .head{
+                margin: 15px 0 30px;
+                text-align: center;
+            }
+            .row{
+                width: 100%;
+                margin-bottom: 30px;
+                position: relative;
+                span{
+                    font-size: 14px;
+                }
+                input{
+                    height: 40px;
+                    width: 299px;
+                    padding-left: 20px;
+                    margin-left: 10px;
+                    border: 1px solid #ddd;
+                    box-sizing: border-box;
+                }
+                button{
+                    width: 100%;
+                    color: #fff;
+                    background: #1b65ce;
+                    padding: 8px 0;
+                    border: none;
+                    font-size: 14px;
+                }
+            }
+            .register{
+                margin-top: 15px;
+                font-size: 16px;
+                text-align: center;
+                a{
+                    color: #1b65ce;
+                }
+            }
+        }
+        .right{
+            float: left;
+            width: 350px;
+            padding-left: 60px;
+            padding-top: 70px;
+            box-sizing: border-box;
+            .text{
+                p{
+                    font-size: 16px;
+                    color: #1b65ce;
+                    margin-bottom: 35px;
+                    font-weight: 400;
+                }
+                .row{
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: #666;
+                    padding-left: 20px;
+                }
+            }
+            .img{
+                height: 135px;
+                margin-top: 50px;
+                img{
+                    display: inline-block;
+                    width: 135px;
+                    height: 135px;
+                    vertical-align: middle;
+                }
+                span{
+                    color: #333;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

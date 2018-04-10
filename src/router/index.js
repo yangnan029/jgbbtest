@@ -25,6 +25,16 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: resolve => require(["../components/login.vue"], resolve)
+    },
+    {
+      path: '/loveValue',
+      name: 'loveValue',
+      component: resolve => require(["../components/loveValue.vue"], resolve)
+    },
+    {
+      path: '/trade',
+      name: 'trade',
+      component: resolve => require(["../components/trade.vue"], resolve)
     }
   ]
 })

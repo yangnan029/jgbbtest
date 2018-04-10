@@ -7,7 +7,7 @@
         <div class="info clearfix">
           <span class="welcome">欢迎您，晓市测试账户</span>
           <span>上次登录IP：192.168.1.1</span>
-          <span class="time">上次登录时间：2018年4月1日</span>
+          <span class="time">上次登录时间：2018年4月10日</span>
         </div>
         <c-bingtu></c-bingtu>
         <div class="profit">
@@ -93,6 +93,8 @@ import cList from "./list.vue";
 import cBingtu from "./bingtu.vue";
 import cFooter from "./footer.vue"
 import axios from "axios";
+import echarts from 'echarts';
+
 import $ from "jquery";
 export default {
   data() {
