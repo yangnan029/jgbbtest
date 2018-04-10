@@ -1,0 +1,229 @@
+.wealth{
+    background: #f0f4f7;
+    .main{
+        width: 1200px;
+        margin: 0 auto;
+        margin-top: 80px;   
+        .right_show{
+            float: right;
+            width: 990px;
+            .info{
+                padding: 10px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-bottom: none;
+                text-align: center;
+                span{
+                    &.welcome{
+                        float: left;
+                    }
+                    &.time{
+                        float: right;
+                    }
+                }
+            }
+            .profit{
+                margin-top: 20px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                table{
+                    width: 100%;
+                    text-align: center;
+                    thead{
+                        tr{
+                            td{
+                                line-height: 1.5;
+                                padding: 14px 0 7px;
+                                font-size: 18px;
+                                border-bottom: 1px dotted #ddd;
+                                border-right: 1px dotted #ddd;
+                                &:last-child{
+                                    border-right: none;
+                                }
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                padding: 30px;
+                                font-size: 28px;
+                                color: #fb565c;
+                                line-height: 1.5;
+                                border-right: 1px dotted #ddd;
+                                &:last-child{
+                                    border-right: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .tishi{
+                p{
+                    margin: 5px 0 0;
+                    text-align: right;
+                    color: #333333;
+                    font-size: 12px;
+                }
+            }
+            .third{
+                .titles{
+                    p{
+                        padding-left: 10px;
+                        font-size: 18px;
+                        border-left: 2px solid #1b65ce;
+                        height: 35px;
+                        line-height: 35px;
+                        span{
+                            color: red;
+                            font-size: 14px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .content{
+                    border: 1px solid #ddd;
+                    border-bottom: none;
+                    background-color: #fff;
+                    margin: 10px 0 20px;
+                    .organ{
+                        .name{
+                            height: 35px;
+                            line-height: 35px;
+                            border-bottom: 1px solid #ddd;
+                            span{
+                                padding-left: 10px;
+                                font-size: 18px;
+                                color: #1b65ce;
+                            }
+                            a{
+                                position: relative;
+                                display: block;
+                                float: right;
+                                height: 28px;
+                                line-height: 28px;
+                                width: 80px;
+                                border: 1px solid #1b65ce;
+                                border-radius: 5px;
+                                margin-right: 20px;
+                                margin-top: 3px;
+                                padding-left: 10px;
+                                box-sizing: border-box;
+                                em{
+                                    font-size: 18px;
+                                    color: #1b65ce;
+                                   font-style: normal; 
+                                   position: absolute;
+                                   &::after{
+                                    position: absolute;
+                                    display: block;
+                                    content: "";
+                                    right: -20px;
+                                    top: 10px;
+                                    width: 8px;
+                                    height:8px;
+                                    transform: rotate(45deg);
+                                    border: 1px solid #1b65ce;
+                                    border-left: none;
+                                    border-top: none;
+                                   }
+                                }
+                            }
+                        }
+                        .products{
+                            display: none;
+                            padding: 20px 20px 0;
+                            .top{
+                                margin-bottom: 10px;
+                                p{
+                                    img{
+                                        display: inline-block;
+                                        width: 32px;
+                                        height: 37px;
+                                        vertical-align: middle;
+                                        margin-right: 10px;
+                                    }
+                                    font-size: 18px;
+                                }
+                            }
+                            .bottom{
+                                position: relative;
+                                .block{
+                                    display: inline-block;
+                                    width: 18%;
+                                    color: #666;
+                                    border-left: 1px dotted #ddd;
+                                    p{
+                                        margin-left: 20px;
+                                        line-height: 2.5;
+                                        font-size: 16px;
+                                        &.num{
+                                            color: #fb565c;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                    
+                                }
+                                .block1{
+                                    width: 25%;
+                                    border-left: none;
+                                    &.num{
+                                        color: #fb565c;
+                                    }
+                                }
+                                .blocks{
+                                    display: inline-block;
+                                    width: 25%;
+                                    border-left: 1px dotted #ddd;
+                                    p{
+                                        margin-left: 20px;
+                                        line-height: 1.5;
+                                        font-size: 14px;
+                                        color: #666;
+                                        
+                                    }
+                                }
+                                .btns{
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                  //  float: right;
+                                    a{
+                                        display: block;
+                                        border: 1px solid #1b65ce;
+                                        width: 90px;
+                                        padding: 5px 0;
+                                        font-size: 16px;
+                                        border-radius: 5px;
+                                        margin-bottom: 10px;
+                                        color: #1b65ce;
+                                        text-align: center;
+                                        &.gets{
+                                            background: #1b65ce;
+                                            color: #fff;
+                                            border-bottom: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.active{
+                            .products{
+                                z-index: -1;
+                                animation:myfirst .5s;
+                                display: block;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }     
+    }
+}
+@keyframes myfirst
+{
+from {height: 0;}
+to {height: 152px;}
+}
