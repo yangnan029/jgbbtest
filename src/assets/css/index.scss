@@ -15,60 +15,38 @@ a{
     }
 }
 .index{
+    min-width: 1200px;
     background: #eeeeee;
-    height: 100vh;
-    .title{
-        width: 1200px;
-        height: 104px;
-        margin: 0 auto;
-        line-height: 104px;
-        .logo{
-            float: left;
-            margin-top: 24px;
-        }
-        .title_list{
-            float: right;
-            a{
-                display: inline-block;
-                line-height: 104px;
-                height: 104px;
-                font-size: 20px;
-                padding: 4px 15px;
-                margin-left: 15px;
-                color: #ffffff;
-                box-sizing: border-box;
-                &.active{
-                    color: #1b65ce;
-                    border-bottom: 2px solid #1b65ce;
-                }
-                span{
-                    padding: 4px 15px;
-                    background: #1b65ce;
-                    color: #ffffff;
-                }
-            }
-        }
-    }
+    
     .content{
+        position: relative;
+        padding: 80px 0;
         width: 1200px;
         margin: 0 auto;
-        position: relative;
         .left{
-            float: left;
-            margin-left: -150px;
-            margin-top: 80px;
+            width: 700px;
+            height: 190px;
+            padding: 10px;
+           float: left;
             .left_content{
                 width: 670px;
                 height: 170px;
-                margin: 10px;
                 background-color: hsla(0,0%,100%,.7);
+                text-align: center;
+                margin: 10px;
+                .left_left{
+                    display: inline-block
+                }.left_middle{
+                    display: inline-block
+                }.left_right{
+                    display: inline-block
+                }
             }
         }
-        .right{
-            float: right;
-            margin-right: 100px;
+        .rights{
+            float: left;
             background: hsla(0,0%,100%,.7);
-            margin-top: 80px;
+            margin-left: 50px;
             .right_content{
                 width: 305px;
                 padding: 40px 30px 20px;
@@ -78,22 +56,21 @@ a{
                     margin: 0 auto;
                     margin-bottom: 20px;
                     border: 1px solid #1b65ce;
+                    position: relative;
                     span{
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -10px;  
+                        left: 0;
                         &.icon{
                             display: inline-block;
                             width: 35px;
                             height: 20px;
                         }
                     }
-                    input[type=text]{
-                        width: 270px;
-                        height: 40px;
-                        line-height: 40px;
-                        border: none;
-                        background: none;
-                        outline:none;
-                    }
+                    input[type=text],
                     input[type=password]{
+                        padding-left: 35px;
                         width: 270px;
                         height: 40px;
                         line-height: 40px;

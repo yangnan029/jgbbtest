@@ -1,8 +1,6 @@
 <template>
   <div class="wealth">
-    <c-header></c-header>
     <div class="main clearfix">
-      <c-list></c-list>
       <div class="right_show">
         <div class="info clearfix">
           <span class="welcome">欢迎您，晓市测试账户</span>
@@ -83,7 +81,6 @@
         </div>
       </div>
     </div>
-    <c-footer></c-footer>
   </div>
 </template>
 
@@ -126,13 +123,7 @@ export default {
       .get('/jgb-web/v1/wealth/taAcctDetail')
       .then(function (res) {
         _self.info=res.data.data;
-        // _self.nowdayIncome=res.data.data.nowdayIncome;
-        // _self.totalAsset=res.data.data.totalAsset;
-        // _self.totalIncome=res.data.data.totalIncome;
-        // _self.arr1=res.data.data.orgTaAcctlist;
-        // _self.arr2=res.data.data[0].taWealthAcctlist;
-        // console.log(_self.info);
-      })
+        })
     },
     changeShow(index){
       this.activeNum=(this.activeNum===index)?'':index;

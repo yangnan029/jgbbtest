@@ -1,8 +1,6 @@
 <template>
     <div class="trade">
-        <c-header></c-header>
         <div class="main clearfix">
-            <c-list></c-list>
             <div class="right_show">
                 <div class="right_list">
                     <div class="top clearfix">
@@ -51,7 +49,6 @@
                 </div>
             </div>
         </div>
-        <c-footer></c-footer>
     </div>
 </template>
 <script>

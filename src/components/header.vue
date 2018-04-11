@@ -1,5 +1,5 @@
 <template>
-  <div class="title">
+  <div class="title clearfix">
       <div class="logo">
         <!-- <img src="../images/logo.png" alt=""> -->
         <img src="../assets/images/logo.png" alt="">

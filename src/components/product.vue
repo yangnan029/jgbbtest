@@ -1,8 +1,6 @@
 <template>
     <div class="product">
-        <c-header></c-header>
         <div class="main clearfix">
-            <c-list></c-list>
             <div class="right_show">
                 <div class="top-nav">
                     <span class="active" @click="changeBox">活期产品</span>
@@ -203,7 +201,6 @@
                 </div>
             </div>
         </div>
-        <c-footer></c-footer>
     </div>
 </template>
 <script>
