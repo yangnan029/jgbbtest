@@ -11,7 +11,7 @@
                         <p>登录</p>
                     </div>
                     <div class="row">
-                        <span>手机号码:</span><input type="text" v-model="telphone"></div>
+                        <span>账号:</span><input type="text" v-model="telphone"></div>
                     <div class="row">
                         <span>登录密码:</span><input type="text" v-model="passwd"></div>
                     <div class="row">
